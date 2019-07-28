@@ -4,7 +4,7 @@ module "create_rg" {
 
 module "create_sa" {
   source = "./terraform-module-sa"
-  resource_group_name     = "${module.create_rg.rg_name}" 
+  sa_rg_name     = "${module.create_rg.rg_name}" 
 }
 
 
